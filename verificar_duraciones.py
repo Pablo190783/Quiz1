@@ -1,0 +1,13 @@
+from moviepy import VideoFileClip, AudioFileClip
+video_final = VideoFileClip("/Users/pablostiefel/Documents/VIDEO_QUIZ_JUEGOS/video_final.mp4")
+fondo = AudioFileClip("/Users/pablostiefel/Documents/VIDEO_QUIZ_JUEGOS/musica_fondo.mp3")
+bienvenida = AudioFileClip("/Users/pablostiefel/Documents/VIDEO_QUIZ_JUEGOS/bienvenida.mp3")
+suscribite = AudioFileClip("/Users/pablostiefel/Documents/VIDEO_QUIZ_JUEGOS/suscribite_audio.mp3")
+print(f"Duración video_final.mp4: {video_final.duration} segundos")
+print(f"Duración musica_fondo.mp3: {fondo.duration} segundos")
+print(f"Duración bienvenida.mp3: {bienvenida.duration} segundos")
+print(f"Duración suscribite_audio.mp3: {suscribite.duration} segundos")
+video_final.close()
+fondo.close()
+bienvenida.close()
+suscribite.close()
